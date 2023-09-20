@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sirma.javacourse.chatclient.controllers.ClientWindowController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
+              <items>
+                  <SplitMenuButton fx:id="languageChooser" mnemonicParsing="false" text="English">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#setToEnglish" text="English" />
+                      <MenuItem mnemonicParsing="false" onAction="#setToBulgarian" text="Български" />
+                    </items>
+                  </SplitMenuButton>
+                  <Label fx:id="usernameLabel" alignment="CENTER" contentDisplay="RIGHT">
+                     <padding>
+                        <Insets left="30.0" right="30.0" />
+                     </padding></Label>
+                  <Button fx:id="reconnectButton" mnemonicParsing="false" onAction="#attemptReconnect" text="Reconnect" visible="false" />
+              </items>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ToolBar>
+            <HBox prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="134.0">
+                     <children>
+                        <Label fx:id="onlineUsersLabel" alignment="CENTER" prefHeight="34.0" prefWidth="113.0" text="Online users" />
+                        <ListView fx:id="onlineUsers" onMouseClicked="#selectOnlineUser" prefHeight="168.0" prefWidth="108.0">
+                           <VBox.margin>
+                              <Insets bottom="4.0" left="2.0" right="2.0" top="2.0" />
+                           </VBox.margin>
+                        </ListView>
+                        <Label fx:id="offlineUsersLabel" alignment="CENTER" prefHeight="34.0" prefWidth="113.0" text="Offline users" />
+                        <ListView fx:id="offlineUsers" onMouseClicked="#selectOfflineUser" prefHeight="168.0" prefWidth="108.0">
+                           <VBox.margin>
+                              <Insets bottom="4.0" left="2.0" right="2.0" top="2.0" />
+                           </VBox.margin>
+                        </ListView>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="chatWindow" prefHeight="400.0" prefWidth="509.0" visible="false">
+                     <children>
+                        <TextArea fx:id="messageTextArea" editable="false" prefHeight="334.0" prefWidth="488.0">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="488.0">
+                           <children>
+                              <TextField fx:id="messageTextField" prefHeight="36.0" prefWidth="382.0">
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="3.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="sendButton" mnemonicParsing="false" onAction="#sendMessage" prefHeight="26.0" prefWidth="88.0" text="Send">
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="6.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
