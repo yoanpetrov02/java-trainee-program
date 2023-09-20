@@ -1,0 +1,28 @@
+.vbox {
+    -fx-background-color: #006600;
+}
+
+.button {
+    -fx-background-color: #e0e0e0;
+    -fx-border-color: #808080;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+    -fx-background-insets: 2;
+}
+
+.button:hover {
+    -fx-background-color: #808080;
+    -fx-border-width:0;
+    -fx-text-fill: #e0e0e0;
+}
+
+.button:pressed {
+    -fx-background-color: #606060;
+    -fx-text-fill: #e0e0e0;
+}
+
+.text-area {
+    -fx-border-color: #808080;
+    -fx-border-width: 2;
+}
