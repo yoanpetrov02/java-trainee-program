@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sirma.javacourse.networking.clientserver.controllers.ServerController">
+   <TextArea fx:id="serverTextArea" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="371.0" wrapText="true" />
+   <Button layoutX="454.0" layoutY="50.0" mnemonicParsing="false" onAction="#startServerOnClick" prefHeight="50.0" prefWidth="80.0" text="Start server" />
+   <Button layoutX="454.0" layoutY="300.0" mnemonicParsing="false" onAction="#stopServerOnClick" prefHeight="50.0" prefWidth="80.0" text="Stop server" />
+</AnchorPane>

@@ -1,0 +1,11 @@
+.textFieldLabel {
+    -fx-font-size: 16px;
+}
+
+#appInfoLabel {
+    -fx-font-size: 14px;
+}
+
+#statusLabel {
+    -fx-font-size: 16px;
+}
