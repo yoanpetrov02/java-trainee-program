@@ -30,7 +30,6 @@
         <module>Networking-And-GUI/Client-Info</module>
         <module>Networking-And-GUI/Reverse-Message-Server</module>
         <module>Networking-And-GUI/Multicasting</module>
-        <module>Chat-Application</module>
     </modules>
 
     <packaging>pom</packaging>
