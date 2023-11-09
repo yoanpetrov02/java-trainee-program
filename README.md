@@ -15,6 +15,7 @@ The modules cover the following Java topics:
 * Design patterns
 * Threads
 * Networkinig and GUI
+* [Final task - chat application](#finaltask)
 
 ## Introduction to Java
 
@@ -122,6 +123,7 @@ The final topic of the program contains tasks about networking and creating desk
 - Memento design pattern
 - MVC architecture.
 
+<a name="finaltask"></a>
 ## Final task
 
 The final task of the trainee program was to create an instant messaging chat application using the learned principles. This task is in another repository, where I've fully documented it.\
